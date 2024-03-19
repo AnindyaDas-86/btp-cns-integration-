@@ -23,6 +23,8 @@ with regard to members, authorizations, and entitlements
 Steps to create a sub account:
 https://help.sap.com/docs/sap-hana-spatial-services/onboarding/creating-subaccount-on-sap-business-technology-platform-sap-btp
 
+API: https://api.sap.com/api/APIAccountsService/resource/Subaccount_Operations
+
 ### Entitlements and Quotas
 When you purchase an enterprise account, you’re entitled to use a specific set of resources, such as the
 amount of memory that can be allocated to your applications.
@@ -58,7 +60,66 @@ https://help.sap.com/docs/btp/sap-business-technology-platform/assigning-role-co
 Assign users to role collection
 https://help.sap.com/docs/btp/sap-business-technology-platform/assign-users-to-role-collections
 
+Assign user groups to a role
+https://help.sap.com/docs/btp/sap-business-technology-platform/assign-user-groups-to-role-collections
 
 ### Destination in BTP
+
+Destinations are predefined endpoints used in the Business Technology Platform (or BTP). Destinations allow you to securely store sensitive information used to connect to a system, such as client credentials, keys, or certificates in 
+the BTP.
+Creating destinations in BTP cockpit:
+
+https://help.sap.com/docs/advanced-financial-closing/administration/how-to-create-destination-in-sap-btp-cockpit-s4hana-cloud
+
+Managing Destinations:
+To manage destinations for your application, choose a procedure that fits best your requirements.
+
+There are various ways to manage destinations. Each method is characterized by different prerequisites and limitations. Before choosing a method, you should evaluate them and decide which one is the most appropriate for your particular scenario. The following link compares the available methods:
+https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/managing-destinations
+
+Our area of interest would be Destination Service REST API
+The Destination service provides a REST API that you can use to read and manage resources like destinations, certificates and destination fragments on all available levels. This API is documented in the SAP Business Accelerator Hub published on SAP site.
+Link: https://api.sap.com/api/SAP_CP_CF_Connectivity_Destination/overview
+
+Please check the API reference provided in the below link 
+
+https://api.sap.com/api/SAP_CP_CF_Connectivity_Destination/resource/
+
+Calling the Destination Service REST API
+https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/calling-destination-service-rest-api
+For calling the REST api, destination service instance is needed inside your subaccount.
+
+To access the Destination service REST API, you need an access token. To generate this token, you need credentials contained in a service key of the Destination service instance.
+
+Information to extract from the service key
+clientid: "<value_to_extract>"
+The client ID that will be used for authentication in the next step.
+
+clientsecret: "<value_to_extract>"
+The client secret that will be used for authentication in the next step.
+
+url: "<value_to_extract>"
+The authentication endpoint from which you get an access token for the Destination service.
+
+uri: "<value_to_extract>"
+The URL of the Destination service.
+
+Refer to the link https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/calling-destination-service-rest-api
+
+
+
 ### XSUAA add authentication
+Accessing Administration Using APIs of the SAP Authorization and Trust Management Service
+https://help.sap.com/docs/btp/sap-business-technology-platform/accessing-administration-using-apis-of-sap-authorization-and-trust-management-service
+
+https://api.sap.com/package/authtrustmgmnt/rest
+
+ How to use REST API of XSUAA to programmatically manage security artifacts
+https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-security-how-to-use-rest-api-of-xsuaa-to-programmatically-manage/ba-p/13540720#samples
+
+https://developers.sap.com/tutorials/btp-app-kyma-prepare-xsuaa.html
 ### Add authorisation(based on roles)
+Users can be assigned to role collections via BTP cockpit.
+Did not find any REST api to assign user to a specific role collection : https://api.sap.com/package/authtrustmgmnt/rest
+
+
