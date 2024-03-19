@@ -123,4 +123,13 @@ https://developers.sap.com/tutorials/btp-app-kyma-prepare-xsuaa.html
 Users can be assigned to role collections via BTP cockpit.
 Did not find any REST api to assign user to a specific role collection : https://api.sap.com/package/authtrustmgmnt/rest
 
+### Service Manager
+https://api.sap.com/api/APIServiceManager/overview
+### Service instance 
+https://api.sap.com/api/APIServiceManager/resource/Service_Instances
+### Service binding
+https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
+
+
+
 
