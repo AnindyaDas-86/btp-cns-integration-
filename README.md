@@ -43,6 +43,9 @@ https://help.sap.com/docs/sap-hana-spatial-services/onboarding/assign-subaccount
 
 https://developers.sap.com/tutorials/cp-cf-entitlements-add.html
 
+REST api: https://api.sap.com/api/APIEntitlementsService/resource/Manage_Assigned_Entitlements
+Only available to manage the assigned entitlement. Did not find an api to create a new one.
+
 ### User management
 Creating an user in BTP
 https://help.sap.com/docs/btp/sap-business-technology-platform/create-users
