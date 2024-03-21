@@ -166,8 +166,8 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
     "audience": "somevalue",
     "nameQualifier": "somevalue",
     "apiKey": "apiKey",
-    "PropertyName": "abc"
-}```
+    "PropertyName": "abc"}
+  ```
 
 
 Open Points:
