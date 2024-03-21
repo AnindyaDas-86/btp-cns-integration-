@@ -157,6 +157,9 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
 
 Open Points:
 https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/oauth-saml-bearer-assertion-authentication
+- How to add key store location( KeyStoreLocation: Contains the name of the certificate configuration to be used for per-destination SAML assertion signing. This certificate will be used instead of the standard subaccount-wide signing key).
+
+- 
 
 
   
