@@ -153,6 +153,22 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
      GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
   
      POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+     Paylaod example
+  ```json
+  {
+    "Name": "NewDestination3",
+    "Type": "HTTP",
+    "URL": "abc.com",
+    "Authentication": "OAuth2SAMLBearerAssertion",
+    "tokenServiceURL": "https://demo.sapjam.com/api/v1/auth/token",
+    "tokenServiceURLType": "Dedicated",
+    "clientKey": "id",
+    "audience": "cubetree.com",
+    "nameQualifier": "www.successfactors.com",
+    "apiKey": "apiKey",
+    "PropertyName": "url: abc.com"
+}
+  ```
 
 
 Open Points:
