@@ -134,5 +134,25 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Instances
 https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
 
 
+### Area of interest
+- Go to BTP Subaccount Destinations screen and Download Trust
+- Create an IAM inbound OAuth2SAMLBearerAssertionFlow Link: https://github.wdf.sap.corp/pages/sapsalescloud/matterhorn-architecture/05-Microservices/IAM/iam-inbound-flows/
+    - Please note: In the initial version, it would be possible to modify only the default SAP delivered OAuth configurations. The default configurations will be pre-delivered and it should be possible to only modify the 
+      clientAppName and certificate as part of the customer setup.
+    - Create an inbound configuration using the certificate that you downlaoded from btp cockpit(destinations). Response to the POST request will have the audience,tokenServiceUrl, clientId, clientAppName etc.
+- In BTP cocokpit , under the Instance and Subscription option, add an instance of Destination Service.
+- Once added, create a Service key and download the JSON. It will have the clientId/clientsecret/url/tenantid,verificationkey,sapname/uri etc.
+- We need to make use of this cleintid and client secret to generate the access token.
+- Use the url that you get from the above service key and make a POST call to this:  <your_url>/oauth/token 
+  with body in urlencoded form having the following:
+    grant_type  -  client_credentials
+    client_id   -  !from service key json file!
+    client_secret - !from service key json file!
+  On making the POST call, you will get the access token, scope and expiry time of the token.
+- Use this access token to make the Destination service specific REST api calls like:
+     GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+     POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+
+
 
 
