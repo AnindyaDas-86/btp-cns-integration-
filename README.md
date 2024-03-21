@@ -153,6 +153,12 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
      GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
   
      POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+
+
+Open Points:
+https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/oauth-saml-bearer-assertion-authentication
+
+
   
 
 
