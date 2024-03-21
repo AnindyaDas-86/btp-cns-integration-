@@ -163,7 +163,7 @@ We want to automate(one click) the process for creating destinations from inside
   POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
 
 
-  Paylaod example
+  Paylaod example, values to be filled from the response of the POST while creating the inbound configuration
   ```json
   {
     "Name": "NewDestination3",
