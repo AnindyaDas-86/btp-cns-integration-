@@ -163,12 +163,11 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
     "tokenServiceURL": "https://demo.sapjam.com/api/v1/auth/token",
     "tokenServiceURLType": "Dedicated",
     "clientKey": "id",
-    "audience": "cubetree.com",
-    "nameQualifier": "www.successfactors.com",
+    "audience": "somevalue",
+    "nameQualifier": "somevalue",
     "apiKey": "apiKey",
-    "PropertyName": "url: abc.com"
-}
-  ```
+    "PropertyName": "abc"
+}```
 
 
 Open Points:
