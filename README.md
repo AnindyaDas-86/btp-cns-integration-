@@ -142,7 +142,7 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
     - Create an inbound configuration using the certificate that you downlaoded from btp cockpit(destinations). Response to the POST request will have the audience,tokenServiceUrl, clientId, clientAppName etc.
 - In BTP cocokpit , under the Instance and Subscription option, add an instance of Destination Service.
 - Once added, create a Service key and download the JSON. It will have the clientId/clientsecret/url/tenantid,verificationkey,sapname/uri etc.
-- We need to make use of this cleintid and client secret to generate the access token.
+- We need to make use of this clientid and client secret to generate the access token.
 - Use the url that you get from the above service key and make a POST call to this:  <your_url>/oauth/token 
   with body in urlencoded form having the following:
     grant_type  -  client_credentials
@@ -151,7 +151,9 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
   On making the POST call, you will get the access token, scope and expiry time of the token.
 - Use this access token to make the Destination service specific REST api calls like:
      GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+  
      POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+  
 
 
 
