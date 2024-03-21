@@ -156,10 +156,14 @@ We want to automate(one click) the process for creating destinations from inside
   
   On making the POST call, you will get the access token, scope and expiry time of the token.
 - Use this access token to make the Destination service specific REST api calls like:
-     GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+
+  GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
   
-     POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
-     Paylaod example
+
+  POST https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
+
+
+  Paylaod example
   ```json
   {
     "Name": "NewDestination3",
