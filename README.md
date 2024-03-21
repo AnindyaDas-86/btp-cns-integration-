@@ -146,9 +146,14 @@ We want to automate(one click) the process for creating destinations from inside
 - We need to make use of this clientid and client secret to generate the access token.
 - Use the url that you get from the above service key and make a POST call to this:  <your_url>/oauth/token 
   with body in urlencoded form having the following:
+  
     grant_type  -  client_credentials
-    client_id   -  !from service key json file!
-    client_secret - !from service key json file!
+  
+    client_id   -  from service key json file
+  
+    client_secret - from service key json file
+
+  
   On making the POST call, you will get the access token, scope and expiry time of the token.
 - Use this access token to make the Destination service specific REST api calls like:
      GET https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/subaccountDestinations
