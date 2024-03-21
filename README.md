@@ -135,6 +135,7 @@ https://api.sap.com/api/APIServiceManager/resource/Service_Bindings
 
 
 ### Area of interest
+We want to automate(one click) the process for creating destinations from inside CNS.
 - Go to BTP Subaccount Destinations screen and Download Trust
 - Create an IAM inbound OAuth2SAMLBearerAssertionFlow Link: https://github.wdf.sap.corp/pages/sapsalescloud/matterhorn-architecture/05-Microservices/IAM/iam-inbound-flows/
     - Please note: In the initial version, it would be possible to modify only the default SAP delivered OAuth configurations. The default configurations will be pre-delivered and it should be possible to only modify the 
