@@ -10,7 +10,7 @@ A global account is the realization of a contract you or your company has made w
 A global account is used to manage subaccounts, members, entitlements and quotas. You receive entitlements
 and quotas to use platform resources per global account and then distribute the entitlements and quotas
 to the subaccount for actual consumption. There are two types of commercial models for global accounts:
-consumption-based model and subscription-based model. See Commercial Models [page 65] .
+consumption-based model and subscription-based model.
 Global accounts are region- and environment-independent. Within a global account, you manage all of your
 subaccounts, which in turn are specific to one region.
 
